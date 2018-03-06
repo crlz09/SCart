@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     SpaceNavigationView spaceNavigationView;
-
+    String[] tituloTabs={"Mi Perfil", "Busqueda", "Restaurants", "Contenido destacado"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,18 +38,17 @@ public class MainActivity extends AppCompatActivity {
         spaceNavigationView.showIconOnly();
         setTitle("Smiling Cart");
         FragmentManager fragmentManager= getSupportFragmentManager();
-        ViewPagerAdapter pagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
-        fragmentManager.beginTransaction().replace(R.id.contenedor,new perfil()).commit();
-
-
-
+        //ViewPagerAdapter pagerAdapter=new ViewPagerAdapter(getSupportFragmentManager());
+        fragmentManager.beginTransaction().replace(R.id.contenedor,new perfil_opcional()).commit();
 
 
         spaceNavigationView.setSpaceOnClickListener(new SpaceOnClickListener() {
             @Override
             public void onCentreButtonClick() {
                // Toast.makeText(MainActivity.this,"onCentreButtonClick", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(),scan.class));
+                startActivity(new Intent(getApplicationContext(),alternate_scan.class));
+               // FragmentManager fragmentManager= getSupportFragmentManager();
+               // fragmentManager.beginTransaction().replace(R.id.contenedor,new escanear()).commit();
             }
 
             @Override
@@ -58,17 +57,20 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager fragmentManager= getSupportFragmentManager();
                 switch (itemIndex) {
                     case 0:
-                        fragmentManager.beginTransaction().replace(R.id.contenedor,new perfil()).commit();
-
+                        fragmentManager.beginTransaction().replace(R.id.contenedor,new perfil_opcional()).commit();
+                        setTitle(tituloTabs[itemIndex]);
                         break;
                     case 1:
                         fragmentManager.beginTransaction().replace(R.id.contenedor,new busqueda()).commit();
+                        setTitle(tituloTabs[itemIndex]);
                         break;
                     case 2:
                         fragmentManager.beginTransaction().replace(R.id.contenedor,new restaurants()).commit();
+                        setTitle(tituloTabs[itemIndex]);
                         break;
                     case 3:
                         fragmentManager.beginTransaction().replace(R.id.contenedor,new patrocinado()).commit();
+                        setTitle(tituloTabs[itemIndex]);
                         break;
                 }
 
@@ -77,12 +79,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemReselected(int itemIndex, String itemName) {
                // Toast.makeText(MainActivity.this, itemIndex + " " + itemName, Toast.LENGTH_SHORT).show();
+                setTitle(tituloTabs[itemIndex]);
             }
         });
 
     }
 
-    public class ViewPagerAdapter extends FragmentStatePagerAdapter {
+   /* public class ViewPagerAdapter extends FragmentStatePagerAdapter {
         public ViewPagerAdapter(FragmentManager fragmentManager){
             super(fragmentManager);
         }
@@ -100,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             return null;
         }
 
-        String[] tituloTabs={"Perfil", "Busqueda", "Restaurants", "Patrocinado"};
+
 
         @Override
         public int getCount() {
@@ -111,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return tituloTabs[position];
         }
-    }
-
+    }*/
 
 }
