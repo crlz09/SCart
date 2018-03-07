@@ -12,7 +12,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 
-public class perfil_opcional extends Fragment {
+public class perfil_opcional extends Fragment{
 
 
     @Override

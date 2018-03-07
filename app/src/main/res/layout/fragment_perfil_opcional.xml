@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ksfactory.scart.perfil"
-    android:background="@color/fondo"
-    android:layout_marginBottom="@dimen/space_navigation_height">
+    android:background="@color/fondo">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -508,7 +507,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="48"
-                        android:text="Quiero manejar"
+                        android:text="Quiero controlar"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#0a8bdc" />
                     <Button
@@ -695,4 +694,6 @@
         </LinearLayout>
 
     </ScrollView>
+
+
 </android.support.v4.widget.DrawerLayout>
