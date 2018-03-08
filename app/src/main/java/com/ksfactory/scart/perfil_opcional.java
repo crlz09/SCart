@@ -26,10 +26,14 @@ public class perfil_opcional extends Fragment{
                              Bundle savedInstanceState) {
         View vista =inflater.inflate(R.layout.fragment_perfil_opcional, container, false);
         // Inflate the layout for this fragment
-        HorizontalScrollView horizontal = vista.findViewById(R.id.horizontal);
+   /*     View include = vista.findViewById(R.id.include);
+
+        HorizontalScrollView horizontal = include.findViewById(R.id.horizontal);
+        horizontal.setHorizontalScrollBarEnabled(false);*/
+
         ScrollView vertical = vista.findViewById(R.id.vertical);
         vertical.setVerticalScrollBarEnabled(false);
-        horizontal.setHorizontalScrollBarEnabled(false);
+
 
         return vista;
     }

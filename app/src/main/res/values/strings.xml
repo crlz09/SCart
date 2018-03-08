@@ -23,8 +23,8 @@
     <string name="tech_topic">Technology</string>
     <string name="sports_topic">Sports</string>
 
-    <string name="top_rated_movies_topic">Top Rated Movies</string>
-    <string name="most_popular_movies_topic">Most Popular Movies</string>
+    <string name="top_rated_movies_topic">Contenido destacado</string>
+    <string name="most_popular_movies_topic">Lo más visitado</string>
 
     <string name="group_title">Group #%1$s</string>
 

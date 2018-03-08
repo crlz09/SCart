@@ -30,18 +30,20 @@ public class busqueda extends Fragment {
 
         View vista = inflater.inflate(R.layout.fragment_busqueda, container, false);
 
-        setHasOptionsMenu(true);
+       // setHasOptionsMenu(true);
         // Inflate the layout for this fragment
         return vista;
     }
 
+/*
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.menu, menu);
         searchView =  getView().findViewById(R.id.action_search);
         MenuItem item = menu.findItem(R.id.action_search);
         searchView.setQueryHint("Busca productos");
-       // searchView.setOnQueryTextListener();
+        searchView.setOnQueryTextListener();
         searchView.setIconified(false);
     }
+*/
 
 }

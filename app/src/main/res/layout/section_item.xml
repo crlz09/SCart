@@ -29,10 +29,10 @@
             android:layout_gravity="top"
             android:background="@color/Blanco">
             <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
-                android:src="@drawable/barcode3"
+                android:src="@drawable/smiling"
                 android:id="@+id/imgItem" />
         </FrameLayout>
 

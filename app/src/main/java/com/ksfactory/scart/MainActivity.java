@@ -11,6 +11,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
@@ -32,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
 
         spaceNavigationView= findViewById(R.id.space);
         spaceNavigationView.initWithSaveInstanceState(savedInstanceState);
-        spaceNavigationView.addSpaceItem(new SpaceItem("Perfil", R.drawable.ic_person_white_24dp));
-        spaceNavigationView.addSpaceItem(new SpaceItem("Buscar", R.drawable.ic_search_white_24dp));
-        spaceNavigationView.addSpaceItem(new SpaceItem("Restaurants", R.drawable.ic_local_dining_white_24dp));
-        spaceNavigationView.addSpaceItem(new SpaceItem("Promociones", R.drawable.ic_error_white_24dp));
+        spaceNavigationView.addSpaceItem(new SpaceItem("Perfil", R.drawable.perfil));
+        spaceNavigationView.addSpaceItem(new SpaceItem("Buscar", R.drawable.busqueda));
+        spaceNavigationView.addSpaceItem(new SpaceItem("Restaurants", R.drawable.restaurants));
+        spaceNavigationView.addSpaceItem(new SpaceItem("Promociones", R.drawable.promociones));
         spaceNavigationView.setSpaceBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         spaceNavigationView.setCentreButtonIcon(R.drawable.barcode3);
         spaceNavigationView.setCentreButtonColor(ContextCompat.getColor(this, R.color.Circule));

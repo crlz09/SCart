@@ -16,6 +16,7 @@
         tools:text="Title test text"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        android:textSize="16sp"
         android:id="@+id/tvTitle" />
 
     <Button
@@ -28,5 +29,6 @@
         android:textColor="@color/Blanco"
         android:textStyle="bold"
         android:text="Editar"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"/>
 </RelativeLayout>

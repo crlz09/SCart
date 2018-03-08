@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ksfactory.scart.perfil"
-    android:background="@color/fondo">
+    tools:context="com.ksfactory.scart.MainActivity"
+    android:background="@color/fondo"
+    android:paddingBottom="50dp">
 
     <!-- TODO: Update blank fragment layout -->
 <ScrollView
@@ -14,70 +15,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="20"
-    android:layout_margin="10dp"
-    android:padding="10dp"
-    android:background="@color/Blanco">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_weight="15">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Datos personales"
-        android:layout_marginBottom="15dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#0a8bdc"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:text="Carlos Molina"
-        android:layout_marginBottom="5dp"
-        android:textColor="#000000"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:text="24 años (12/04/1993)"
-        android:layout_marginBottom="5dp"
-        android:textColor="#000000"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:text="Masculino"
-        android:textColor="#000000"/>
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_weight="5"
-    android:padding="10dp">
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:src="@drawable/smiling"/>
-    <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#0a8bdc"
-        android:text="Cambiar"/>
-</LinearLayout>
-</LinearLayout>
 
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
